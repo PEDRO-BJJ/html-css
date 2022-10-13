@@ -5,9 +5,23 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Pacifico & display=swap');
+
+root:{
+    --font1: verdana, Geneva, tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+    --font4: 'Pacifico', cursive;
+}
+
 html, body {
     min-height: 100vh;
     background-color: beige;
+    font-family: var(--font1);
 }
 
 header {
@@ -19,6 +33,7 @@ header {
 
 header > h1 {
     padding-top: 50px;
+    font-family:var(--font2);
     /*text-transform: uppercase;
     deixa o texto do h1 maiusculo*/
     font-variant: small-caps;
@@ -45,6 +60,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 2em;
 }
 
 section.normal{
