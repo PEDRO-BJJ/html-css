@@ -11,7 +11,7 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Pacifico & display=swap');
 
-root:{
+:root{
     --font1: verdana, Geneva, tahoma, sans-serif;
     --font2: 'Passion One', cursive;
     --font3: 'Sriracha', cursive;
@@ -33,12 +33,13 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    font-family:var(--font2);
+    font-family:var(--font1);
     /*text-transform: uppercase;
     deixa o texto do h1 maiusculo*/
     font-variant: small-caps;
     /*font-variant:small-caps;
     deixa maiuscolo melhorado*/
+    font-size: 10vw;
 }
 
 header > p {
@@ -60,7 +61,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--font3);
+    font-family: var(--font2);
     font-size: 2em;
 }
 
@@ -68,15 +69,39 @@ section.normal{
     background-color: white;
     color:black;
 }
+section.normal > p {
+    text-shadow: 2px 2px 0px rgba(128, 128, 128, 0.74);
+}
 
 section.imagem{
-    background-color: rgb(54, 53, 53);
+    background-color: rgba(54, 53, 53, 0.699);
     color:white;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+    background-size: cover;/*imagem fica responsiva*/
+    background-attachment:fixed /*efeito que  imagem fica fixa*/
 }
 
 section.imagem > p {
-    background-color: rgba(26, 25, 25, 0.904);
+    display: inline-block;
+    background-color: rgba(26, 25, 25, 0.568);
     width: 400px;
+    text-shadow: 2px 2px 0px black;
+    border-radius: 10px 10px;
+   
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url("../imagens/background002.jpg");
+    background-position: right bottom;
 }
 
 footer {
